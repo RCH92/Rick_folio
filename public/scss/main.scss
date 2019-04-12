@@ -1,0 +1,109 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+#homeImg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/Asia/floating-villages-Edit.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    color: rgb(255, 255, 255);
+
+}
+// #mainContainer {
+//     width: 100vmax;
+//   height: 100vmax;
+// }
+body, html { 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+.top-bar {
+    background: none;
+    display: flex;
+    // width: 100vw;
+    // height: 100vh;
+    padding: 0px;
+    vertical-align: top;
+   
+    .main-cell{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .border-cell{
+        border-right: 1px solid whitesmoke;
+    }
+    .main-item{
+        font-size: 6rem;
+        font-family:"Bebas Neue W03 Regular";
+        src:url("Fonts/1444651/69efc83f-ff1e-4b84-aaac-c35e238e33ca.eot?#iefix");
+        src:url("Fonts/1444651/69efc83f-ff1e-4b84-aaac-c35e238e33ca.eot?#iefix") format("eot"),url("Fonts/1444651/11e21f91-5c9d-4170-908d-d6afa916d2fc.woff2") format("woff2"),url("Fonts/1444651/b336f9f4-ee3c-4257-a4af-d5d2e3671b86.woff") format("woff"),url("Fonts/1444651/213f5fa9-0ccb-4f43-baf8-99d81c93b2ae.ttf") format("truetype");
+        color: ghostwhite;
+        background: none;
+    }
+    li, ul, div, a{
+        background: none;
+        color: ghostwhite;
+    }
+    .second-item{
+        font-size: 1.8rem;
+        // width: fit-content;
+        text-align: center;
+        
+    }
+    .third-item{
+        font-size: 1.1rem;  
+        text-align: left;
+        background: rgba(0, 0, 0, 0.26);
+    }
+    #stills-div:hover{
+        .second-item{
+            display: block;
+        }
+    }
+      
+
+}
+#stills-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: stretch;
+    flex-direction: row;
+    width: 100%;
+    height:100%;
+
+    #photos{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: stretch;
+        flex-direction: row;
+        width: 100%;
+        height:100%;
+
+        .still{
+            max-width: 18%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: fit-content;
+        background-position: center;
+        background-color: darkgrey;
+        vertical-align: -webkit-baseline-middle;
+        text-align: center;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}

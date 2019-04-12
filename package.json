@@ -1,0 +1,38 @@
+{
+  "name": "Patrick-Eckrich-Portfolio",
+  "version": "1.0.0",
+  "description": "Basic template for a new Foundation for Sites project.",
+  "main": "server.js",
+  "scripts": {
+    "start": "gulp",
+    "watch": "gulp sass"
+  },
+  "author": "Ross Hallenbeck",
+  "license": "MIT",
+  "bugs": {
+    "url": "",
+    "email": ""
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "foundation-sites": "^6.5.1",
+    "jquery": "^3.3.1",
+    "motion-ui": "~2.0.0",
+    "what-input": "^5.1.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "browser-sync": "^2.18.13",
+    "gulp": "^4.0.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zurb/foundation-sites-template.git"
+  },
+  "private": true
+}
