@@ -4,16 +4,16 @@ $(document).ready(function () {
 })
 function navActive(){
     $('#nav-stills').attr("data-link", "active");
-    $('#nav-home').attr("data-link", "inactive");
-    $('#nav-about').attr("data-link", "inactive");
-    $('#nav-motion').attr("data-link", "inactive");
+    $('#nav-home').data("link", "inactive");
+    $('#nav-about').data("link", "inactive");
+    $('#nav-motion').data("link", "inactive");
     $('#social-bar').attr("style", "color: black");
     $('.line').attr("style", "background: black");
     console.log("working" + $('#nav-stills').data("link"))
 }
 function getJson() {
     console.log("starting...");
-    var dataURL = "patrickeckrich.com/json";
+    var dataURL = "/json";
     $.getJSON(dataURL, {
         format: "json"
     }).done(function (data) {
@@ -77,7 +77,7 @@ function makePhotos(data) {
             newStillDiv.attr('id', `still_${data[i].id}`);
             newStillDiv.addClass('still');
             var newStillImg = $('<img>');
-            newStillImg.attr('src', 'http://patrickeckrich.com/public/' + data[i].img_small);
+            newStillImg.attr('src', '/public/' + data[i].img_small);
             newStillImg.addClass("still-img");
             newStillImg.attr('id', `still${i}`);
             newStillDiv.append(newStillImg);

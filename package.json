@@ -4,6 +4,7 @@
   "description": "Portfolio photography site",
   "main": "server.js",
   "scripts": {
+    "start-dev": "gulp",
     "start": "node server.js",
     "watch": "gulp sass"
   },

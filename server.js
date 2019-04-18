@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
 
-const PORT= process.env.PORT;
+const PORT= process.env.PORT || 5000;
 
 // ESJ
 // ================================================================================================
