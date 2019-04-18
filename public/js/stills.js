@@ -13,7 +13,7 @@ function navActive(){
 }
 function getJson() {
     console.log("starting...");
-    var dataURL = "http://localhost:5000/json";
+    var dataURL = "patrickeckrich.com/json";
     $.getJSON(dataURL, {
         format: "json"
     }).done(function (data) {
@@ -77,7 +77,7 @@ function makePhotos(data) {
             newStillDiv.attr('id', `still_${data[i].id}`);
             newStillDiv.addClass('still');
             var newStillImg = $('<img>');
-            newStillImg.attr('src', 'http://localhost:5000/public/' + data[i].img_small);
+            newStillImg.attr('src', 'http://patrickeckrich.com/public/' + data[i].img_small);
             newStillImg.addClass("still-img");
             newStillImg.attr('id', `still${i}`);
             newStillDiv.append(newStillImg);
