@@ -4,7 +4,7 @@
   "description": "Portfolio photography site",
   "main": "server.js",
   "scripts": {
-    "start": "gulp",
+    "start": "server.js",
     "watch": "gulp sass"
   },
   "author": "Ross Hallenbeck",
