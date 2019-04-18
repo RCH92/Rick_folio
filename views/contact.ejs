@@ -1,0 +1,41 @@
+<div id="contact-wrapper">
+    <h1 id="contact-text">Contact Us!</h1>
+    <div id="contact-form">
+            
+            <form action="">
+              <div class="row">
+                  <div class="small-12 column">
+                  <div class="form-floating-label">
+                    <input type="text" id="name" name="name">
+                    <label for="name">Name</label>
+                  </div>
+                </div>
+                <div class="small-12 column">
+                  <div class="form-floating-label">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                
+                <div class="small-12 column">
+                  <div class="form-floating-label">
+                    <input type="tel" id="tel" name="tel">
+                    <label for="tel">Phone Number(optional)</label>
+                  </div>
+                </div>
+                <div class="small-12 column">
+                  <div class="form-floating-label">
+                    <textarea name="message" id="" rows="5" placeholder=""></textarea>
+                    <label for="textarea">message</label>
+                  </div>
+                </div>
+              </div>
+              <div id="submit-wrapper">
+              <div id="submit-button"><P>Submit</P></div>
+              </div>
+            </form>
+    </div>
+</div>
+
+<% include ./partials/_nav_bar %>
+<script src="../public/public/js/contact.js"></script>
