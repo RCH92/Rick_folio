@@ -165,7 +165,7 @@ $(window).resize(function(){
     loaded = false;
     $('#orbit-modal').foundation('close');
     $('.slick-orbit').slick('unslick');
-    slickInitiate();
+    
     checkSize();
     
 })
