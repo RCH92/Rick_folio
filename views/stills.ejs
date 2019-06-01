@@ -1,16 +1,47 @@
+
 <div id="stills-wrapper">
     <div id="filter-bar">
         <div id="borderRight"></div>
-        <div id="filter-options"><h2>Filter</h2></div>
-        
-        
+        <div id="filter-options">
+            <h2>Filter</h2>
+        </div>
+
+
     </div>
-    
+
     <div id="photos"></div>
-    <div id="orbit-mobil">
-        <div id="orbitdiv"></div>
-    </div>
+
     
     <% include ./partials/_nav_bar %>
 </div>
-<script src="../public/public/js/stills.js"></script>
+<div id="orbit-mobil">
+    <div class="reveal" id="orbit-modal" data-reveal>
+        <div id="modal-close">Close X</div>
+        <div id="social-bar">
+            <div id="contact">
+                <a class="contact" href="/contact">Contact</a>
+                <span class="line-m"></span>
+
+            </div>
+            <div id="social-icons">
+                <div id="facebook-icon">
+                    <i class="icon fab fa-facebook-square"></i>
+                </div>
+                <div id="insta-icon">
+                    <i class="icon fab fa-instagram"></i>
+                </div>
+                <div id="linkedin-icon">
+                    <i class="icon fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+        <div id="orbitdiv">
+            <div class="orbit-button" id="orbit-left" data-slide-direction="slickPrev"><i class="orbit-icon icon-left-open-big"></i></div>
+            <div id="slick-orbit" class="slider slick-orbit" data-test='test'></div>
+            <div class="orbit-button" id="orbit-right" data-slide-direction="slickNext"><i class="orbit-icon icon-right-open-big"></i></div>
+        </div>
+    </div>
+
+</div>
+
+<script src="/public/public/js/stills.js"></script>

@@ -20,5 +20,11 @@ $('.form-floating-label input, .form-floating-label textarea').focusin(function(
       $(this).parent().removeClass('has-value');
     }
   });
-  
-  
+$('#submit-button').on("click", function(){
+    $('#contactform').submit();
+})
+
+  var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 

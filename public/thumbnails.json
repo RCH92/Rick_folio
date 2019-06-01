@@ -4,251 +4,251 @@
         "name": "Airplane",
         "img_small": "public/images/thumbnails/airplane_8x6.jpg",
         "img_large": "public/images/Mountains and Animals/airplane_full.jpg",
-        "project": "Outdoor" 
+        "project": "American West" 
     },
     {
         "id": 2,
         "name": "Angkor Wat",
         "img_small": "public/images/thumbnails/angkor_wat_8x6.jpg",
         "img_large": "public/images/Asia/angkor_wat_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 3,
         "name": "Aqueduct",
         "img_small": "public/images/thumbnails/aqueduct_8x6.jpg",
         "img_large": "public/images/Asia/aqueduct_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 4,
         "name": "Ayutthaya",
         "img_small": "public/images/thumbnails/ayutthaya_8x6_edit.jpg",
         "img_large": "public/images/Asia/ayutthaya_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 5,
         "name": "Bike",
         "img_small": "public/images/thumbnails/bike_8x6.jpg",
         "img_large": "public/images/Asia/bike_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 6,
         "name": "Boat in Cambodia",
         "img_small": "public/images/thumbnails/boat_in_cambodia_8x6.jpg",
         "img_large": "public/images/Asia/boat_in_cambodia_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 7,
         "name": "Bridge in Cambodia",
         "img_small": "public/images/thumbnails/bridge_in_cambodia_8x6.jpg",
         "img_large": "public/images/Asia/bridge_in_cambodia_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 8,
         "name": "Buddha",
         "img_small": "public/images/thumbnails/buddha_8x6.jpg",
         "img_large": "public/images/Asia/buddha_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 9,
         "name": "Cameron Highlands",
         "img_small": "public/images/thumbnails/cameron_highlands_8x6.jpg",
         "img_large": "public/images/Asia/cameron_highlands_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 10,
         "name": "Child",
         "img_small": "public/images/thumbnails/child_8x6.jpg",
         "img_large": "public/images/Asia/child_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 11,
         "name": "Chinatown",
         "img_small": "public/images/thumbnails/chinatown_retouch_8x6.jpg",
         "img_large": "public/images/Asia/chinatown_retouch_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 12,
         "name": "Dragon",
         "img_small": "public/images/thumbnails/dragon_8x6.jpg",
         "img_large": "",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 13,
         "name": "Floating Villages",
         "img_small": "public/images/thumbnails/floating_villages_Edit_8x6.jpg",
         "img_large": "public/images/Asia/floating_villages_Edit_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 14,
         "name": "Fuji",
         "img_small": "public/images/thumbnails/fuji_2_8x6.jpg",
         "img_large": "public/images/Asia/fuji_2_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 15,
         "name": "Heron Landing",
         "img_small": "public/images/thumbnails/heron_landing_8x6.jpg",
         "img_large": "public/images/Asia/heron_landing_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 16,
         "name": "Hong Kong",
         "img_small": "public/images/thumbnails/hong_kong_8x6.jpg",
         "img_large": "public/images/Asia/hong_kong_8x6_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 17,
         "name": "Hong Kong 2",
         "img_small": "public/images/thumbnails/hong_kong2_8x6.jpg",
         "img_large": "public/images/Asia/hong_kong2_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 18,
         "name": "KL",
         "img_small": "public/images/thumbnails/kl_8x6.jpg",
         "img_large": "public/images/Asia/kl_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 19,
         "name": "KL in storm",
         "img_small": "public/images/thumbnails/KL_in_storm_8x6.jpg",
         "img_large": "public/images/Asia/KL_in_storm_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 20,
         "name": "Kyoto",
         "img_small": "public/images/thumbnails/kyoto_8x6.jpg",
         "img_large": "",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 21,
         "name": "Max Hiking",
         "img_small": "public/images/thumbnails/max_hiking_8x6.jpg",
         "img_large": "public/images/Mountains and Animals/max_hking_full.jpg",
-        "project": "Outdoor" 
+        "project": "American West" 
     },
     {
         "id": 22,
         "name": "Monkey",
         "img_small": "public/images/thumbnails/monkey_8x6.jpg",
         "img_large": "public/images/Mountains and Animals/monkey_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 23,
         "name": "Mountains",
         "img_small": "public/images/thumbnails/mountains_8x6.jpg",
         "img_large": "public/images/Mountains and Animals/mountains_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 24,
         "name": "Sapa valley",
         "img_small": "public/images/thumbnails/sapa_valley_8x6.jpg",
         "img_large": "",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 25,
         "name": "Singapore",
         "img_small": "public/images/thumbnails/singapore_8x6.jpg",
         "img_large": "public/images/Asia/singapore_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 26,
         "name": "Snapseed",
         "img_small": "public/images/thumbnails/Snapseed_8x6.jpg",
         "img_large": "public/images/Asia/Snapseed_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 27,
         "name": "Snow in Japan",
         "img_small": "public/images/thumbnails/snow_in_japan_8x6.jpg",
         "img_large": "",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 28,
         "name": "Sun temple",
         "img_small": "public/images/thumbnails/sun_temple_8x6.jpg",
         "img_large": "public/images/Asia/sun_temple_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 29,
         "name": "Sunset on Ayutthaya",
         "img_small": "public/images/thumbnails/sunset_on_ayutthaya_8x6.jpg",
         "img_large": "public/images/Asia/sunset_on_ayutthaya_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 30,
         "name": "Tea fields",
         "img_small": "public/images/thumbnails/tea_fields_8x6.jpg",
         "img_large": "public/images/Asia/tea_fields_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 31,
         "name": "Teton",
         "img_small": "public/images/thumbnails/teton_8x6.jpg",
         "img_large": "public/images/Mountains and Animals/teton_full.jpg",
-        "project": "Outdoor" 
+        "project": "American West" 
     },
     {
         "id": 32,
         "name": "Tree in tea fields",
         "img_small": "public/images/thumbnails/tree_in_tea_field_8x6.jpg",
         "img_large": "public/images/Asia/tree_in_tea_field_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 33,
         "name": "Tuk tuk",
         "img_small": "public/images/thumbnails/tuk_tuk_8x6.jpg",
         "img_large": "public/images/Asia/tuk_tuk_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 34,
         "name": "Waterfall",
         "img_small": "public/images/thumbnails/waterfall_8x6.jpg",
         "img_large": "public/images/Mountains and Animals/waterfall_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 35,
         "name": "Waterfall 2",
         "img_small": "public/images/thumbnails/waterfall_2_8x6.jpg",
         "img_large": "public/images/Asia/waterfall_2_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     },
     {
         "id": 36,
         "name": "Waterfront property",
         "img_small": "public/images/thumbnails/waterfront_property_8x6.jpg",
         "img_large": "public/images/Asia/Waterfront_Property_full.jpg",
-        "project": "Asia" 
+        "project": "South East Asia" 
     }
 ]

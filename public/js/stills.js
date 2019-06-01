@@ -1,29 +1,36 @@
+
 $(document).ready(function () {
+    $(document).foundation();
+    
+    $('#orbit-modal').attr('style', "width: auto;max-width: 85vw; border: none;background: none; padding: 0; height: 85vh;");
     getJson();
     navActive();
+    // slickInitiate();
+    
 })
-function navActive(){
+
+function navActive() {
     $('#nav-stills').attr("data-link", "active");
     $('#nav-home').data("link", "inactive");
     $('#nav-about').data("link", "inactive");
     $('#nav-motion').data("link", "inactive");
     $('#social-bar').attr("style", "color: black");
     $('.line').attr("style", "background: black");
-    console.log("working" + $('#nav-stills').data("link"))
 }
+var stillsData;
 function getJson() {
-    console.log("starting...");
     var dataURL = "/json";
     $.getJSON(dataURL, {
         format: "json"
     }).done(function (data) {
-        var stillsData = data;
-        console.log("working...");
-        console.log(stillsData);
+        stillsData = data;
         makePhotos(stillsData);
+        
+        
         sortData(stillsData);
     });
-}    
+}
+
 var fullImg = [];
 var thumbImg = [];
 var filters = ["All"];
@@ -50,40 +57,118 @@ function sortData(data) {
             }
 
             if (unique == true) {
-                console.log(unique);
                 thumbImg.push(thumbData);
                 fullImg.push(orbitData);
             }
-            if(filterUnique == true){
+            if (filterUnique == true) {
                 filters.push(filter);
             }
         }
     });
-    console.log(fullImg);
-    console.log(filters);
     makeFilter(filters);
 }
-    
-function makeFilter(data){
+
+function makeFilter(data) {
     data.forEach(element => {
         let newFilter = $(`<div class="filter-option" data-${element}><h3>${element}</h3></div>`);
         $('#filter-options').append(newFilter);
     })
 }
+var initialIndex = 0;
+function RefreshListeners(){
+    $('#photos').off();
+    $('#photos').on("click", ".still", function(){
+        let slideNumber = $(this).data("index");
+        initialIndex = slideNumber;
+        $('#orbit-modal').foundation('open');
+        
+        $('.slick-orbit').slick("slickGoTo", slideNumber, true);
+    }) 
+}
 function makePhotos(data) {
+    let count = 0;
     for (let i = 0; i < data.length; i++) {
         if (data[i].img_small && data[i].img_large) {
+
             var newStillDiv = $(`<div>`);
-            newStillDiv.attr('id', `still_${data[i].id}`);
-            newStillDiv.addClass('still');
+            var newSlideDiv = $('<div>');
             var newStillImg = $('<img>');
+            var newSlideImg = $('<img>');
+            
+            
+
+            newStillDiv.addClass('still');
+            newStillDiv.attr("data-index", count);
+
             newStillImg.attr('src', '/public/' + data[i].img_small);
             newStillImg.addClass("still-img");
             newStillImg.attr('id', `still${i}`);
             newStillDiv.append(newStillImg);
-
-            // newStill.attr('style', 'background-image: url(http://localhost:5000/public/' + data[i].img + ')');
+           
             $('#photos').append(newStillDiv);
+
+            newSlideImg.attr('src', '/public/' + data[i].img_large);
+            newSlideDiv.append(newSlideImg);
+            $('#slick-orbit').append(newSlideDiv);
+
+            count++;
+            
         }
     }
+    RefreshListeners();
 }
+function changeSlide(direction){
+    $('.slick-orbit').slick(direction);
+}
+var initialize = true;
+ 
+
+$('#modal-close').on("click", function(){
+    $('#orbit-modal').foundation('close');
+    
+})
+$('.orbit-button').on('click', function(){
+    let clickDirection = $(this).data("slide-direction");
+    changeSlide(clickDirection);
+    
+})
+var loaded = false;
+function slickInitiate(){
+    $('.slick-orbit').slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        centerMode: false,
+        initialSlide: initialIndex,
+        arrows: false,
+        autoplay: false
+        // lazyLoad: "progressive"
+    })
+    
+    loaded = true;
+}
+
+$(window).resize(function(){
+    loaded = false;
+    $('.slick-orbit').slick('unslick');
+    slickInitiate();
+})
+
+$(window).on('open.zf.reveal', function(){
+    if(!loaded){
+
+    slickInitiate();
+    
+    
+    $('.slick-orbit').slick('refresh');
+    
+    
+    
+}
+
+
+
+$('.slick-orbit').slick('setPosition', 0);
+  });

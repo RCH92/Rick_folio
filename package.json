@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start-dev": "gulp",
-    "start": "node server.js",
+    "start": "gulp",
     "watch": "gulp sass"
   },
   "author": "Ross Hallenbeck",

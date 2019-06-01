@@ -5,27 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Patrick Eckrich Photography</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" type="image/png" href="/public/images/Logo/patrick-logo.png" sizes="16x16"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/public/images/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/public/images/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/public/images/logo/favicon-16x16.png">
+    <link rel="manifest" href="/public/public/images/logo/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="/public/public/css/app.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Bowlby+One|Bowlby+One+SC|Candal|Shojumaru" rel="stylesheet">
-    <script src="/jquery/jquery.js"></script>
-    <script type="text/javascript" src="../public/public/photos.json"></script>
+   
+
 </head>
-<body>
-    <div id="mainContainer">
-        <%- body %>
-        <% include ./partials/_social_media %>
-    </div>
-    
-    <script src="/jquery/jquery.js"></script>
+<body>   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="/whatInput/what-input.js"></script>
     <script src="/foundation/js/foundation.js"></script>
-    <script src="../public/public/js/app.js"></script>
-    <script>
-    $(document).foundation();
+    <div id="mainContainer">
+            
+        <%- body %>
+        <% include ./partials/_social_media %>
+    </div> 
+    
+    
+    
+    
+    <!-- <script src="../public/public/js/app.js"></script> -->
+    
 
-    </script>
+    <!-- <script>
+    
+        $(document).foundation();
+        console.log('hi mom!');
+    
+        
+</script> -->
+
+    
 </body>
 </html>

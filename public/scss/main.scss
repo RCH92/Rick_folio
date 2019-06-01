@@ -3,6 +3,12 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 body{
     overflow-x: hidden;
 }
@@ -19,6 +25,9 @@ body{
 }
 #mainContainer {
     overflow: hidden;
+    height: 100vh;  
+    width: 100vw;
+    background: #c6c6c6;
 }
 #homeImg { 
     overflow-x: hidden; 
@@ -123,12 +132,14 @@ body{
         background-color: darkgrey;
         vertical-align: -webkit-baseline-middle;
         text-align: center;
-        margin: 10px 10px; 
+        margin: 10px 10px;
+         
           
         }
         .still:hover{
             box-shadow: 0px 0px 20px rgba(17, 16, 15, 0.561), 0 0px 10px rgba(43, 44, 35, 0.555);
     transition: 0.1s;
+    cursor: pointer;
         }
         img{
             max-width: 100%;
@@ -203,7 +214,7 @@ body{
 #social-bar{
     width: 100%;
     height: 6vh;
-    position: absolute;
+    position: fixed;
     display: flex;
     // justify-content: center;
     // align-items: center;
@@ -211,9 +222,10 @@ body{
     bottom: 0px;
     color: whitesmoke;
     flex-direction: row;
+    z-index: 1000;
     #contact{
         display: flex;
-        position: absolute;
+        position: fixed;
         right: 0;
     }
     .line{
@@ -235,6 +247,7 @@ body{
         height: 100%;
         align-self: center;
         margin: auto;
+        color: inherit;
         .icon{
             font-size: 40px;
             margin: 5px; 
@@ -321,17 +334,18 @@ body{
     flex-direction: row;
     align-items: center;
     justify-items: center;
-    background-image: url("../images/Asia/cameron_highlands_full.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
+    background-image: url("../images/Asia/fuji_2_full.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
             
 #bio-wrapper{
     display: flex;
     max-width: 60vw;
     max-height: 75vh;
     height: 100%;
-    background: rgba(211, 211, 211, 0.850);
+    background:#f1f1f1;
     margin: auto;
+    overflow-y: scroll;
     #bio-image{
         display: flex;
         height: 100%;
@@ -372,6 +386,12 @@ body{
     width: 100vw;
     align-items: center;
     justify-items: center;
+
+    h1{
+        font-family:"Bebas Neue W03 Regular";
+        src:url("Fonts/1444651/69efc83f-ff1e-4b84-aaac-c35e238e33ca.eot?#iefix");
+        src:url("Fonts/1444651/69efc83f-ff1e-4b84-aaac-c35e238e33ca.eot?#iefix") format("eot"),url("Fonts/1444651/11e21f91-5c9d-4170-908d-d6afa916d2fc.woff2") format("woff2"),url("Fonts/1444651/b336f9f4-ee3c-4257-a4af-d5d2e3671b86.woff") format("woff"),url("Fonts/1444651/213f5fa9-0ccb-4f43-baf8-99d81c93b2ae.ttf") format("truetype");
+    }
     
     #contact-form{
         width: 60%;
@@ -380,6 +400,7 @@ body{
         justify-self: center;
         align-self: center;
         margin-top: 20px;
+        
     }
     #contact-text{
         justify-self: center;
@@ -399,7 +420,7 @@ body{
             margin:auto;
             
             text-align: center;
-            border: 1px solid $medium-gray;
+            border: 1px solid black;
             border-radius: 12px;
 
 
@@ -479,10 +500,200 @@ $highlight-color: dodgerblue;
     font-weight: 400;
   }
 }
+.button{
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top:80px;
+}
+#orbit-mobil{
+    min-height: 60vh;
+    #orbit-modal{
+        display: flex;
+        background: none;
+        border: none;
+        position: absolute;
+        max-height: 100vh;
+        width: 100% !important;
+        max-width: 75vw;
+        padding: 0;
+        overflow: hidden;
 
 
+    
+    img{
+        display: inherit;
+        max-height: 100ch
+    }
+    }
+}
+.reveal-overlay{
+    // display: flex;
+    background: rgba(10,10,10,0.9);
+    
+}
+    #orbitdiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        height: 100%;
+        overflow: hidden;
+        .orbit-button{
+            padding: 10px;
+            font-size: 3rem;
+            color: #f5f5f55c;
+        }
+        .orbit-button:hover{
+            cursor: pointer;
+            color: whitesmoke;
+        }
+        
+        
+    }
+    @font-face {
+        font-family: 'fontello';
+        src: url('../Fonts/fontello/fontello.eot?87924435');
+        src: url('../Fonts/fontello/fontello.eot?87924435#iefix') format('embedded-opentype'),
+             url('../Fonts/fontello/fontello.woff2?87924435') format('woff2'),
+             url('../Fonts/fontello/fontello.woff?87924435') format('woff'),
+             url('../Fonts/fontello/fontello.ttf?87924435') format('truetype'),
+             url('../Fonts/fontello/fontello.svg?87924435#fontello') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+      /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+      /*
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @font-face {
+          font-family: 'fontello';
+          src: url('../font/fontello.svg?87924435#fontello') format('svg');
+        }
+      }
+      */
+       
+       [class^="icon-"]:before, [class*=" icon-"]:before {
+        font-family: "fontello";
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+       
+        display: inline-block;
+        text-decoration: inherit;
+        width: 1em;
+        margin-right: .2em;
+        text-align: center;
+        /* opacity: .8; */
+       
+        /* For safety - reset parent styles, that can break glyph codes*/
+        font-variant: normal;
+        text-transform: none;
+       
+        /* fix buttons height, for twitter bootstrap */
+        line-height: 1em;
+       
+        /* Animation center compensation - margins should be symmetric */
+        /* remove if not needed */
+        margin-left: .2em;
+       
+        /* you can be more comfortable with increased icons size */
+        /* font-size: 120%; */
+       
+        /* Font smoothing. That was taken from TWBS */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+       
+        /* Uncomment for 3D effect */
+        /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+      }
+       
+      .icon-left-open-big:before { content: '\e800'; } 
+      .icon-right-open-big:before { content: '\e801'; } 
+        #modal-close{
+            font-size: 1.4rem;
+            color: #f5f5f5;
+            position: fixed;
+            top: 20px;
+            /* right: 20px; */
+            left: 20px;
+            display: block;
+        }
+        #modal-close:hover{
+            cursor: pointer;
+        }
+        .line-m{
+            width: 45px;
+            height: 1px;
+            background: white;
+            align-self: center;
+            margin: 20px;
+            margin-right: 0px;
+        }
 
+#slick-orbit{
+        display: flex;
+        align-items: center;
+        background: black;
+        height: 100%;
+        overflow: hidden;
+        
+        
 
+    }        
+    
+        .slick-slide{
+            display: none;
+            float: left;
+            height: auto;
+            min-height: 1px;
+            img{
+                max-height: 85vh !important; 
+                margin: auto;
+                background: none;
+            }
+        }
 
-
-
+    .slick-cloned div{
+        height: 100%;
+        position: relative;
+        // bottom: 0px;
+        padding: auto;
+        margin: auto;
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+    }
+    .slick-slide div{
+        height: 100%;
+        position: relative;
+        bottom: 0px;
+        padding: auto;
+        margin: auto;
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+    }
+    .slick-track{
+        display: flex;
+    }
+    .contact-divs{
+        border: 1px solid black;
+    }
+    #motion-container{
+        display: flex;  
+        max-width: 80vw;
+        max-height: 80vh;
+        height:80vh;
+        // background: pink;
+        margin: auto;
+        position: relative;
+        top: 10vh;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .youtube-video{
+            // padding: 20px;
+        }
+    }
+    
