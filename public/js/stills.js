@@ -52,6 +52,7 @@ function sortData(data) {
             let orbitData = { "id": element.id, "img": element.img_large };
             let thumbData = { "id": element.id, "img": element.img_small };
             let filter = element.project;
+            filter = filter.replace(/\s+/g, '-');
             let unique = true;
             for (let i = 0; i < thumbImg.length; i++) {
                 if (thumbImg[i].id == thumbData.id) {
@@ -160,7 +161,9 @@ function slickInitiate(){
     
     loaded = true;
 }
-
+$('#filter-options').on('click', '.filter-option', function(){
+    console.log($(this).data());
+})
 $(window).resize(function(){
     loaded = false;
     $('#orbit-modal').foundation('close');
