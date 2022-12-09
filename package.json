@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-ejs-layouts": "^2.5.0",
     "foundation-sites": "^6.5.1",
     "jquery": "^3.3.1",
